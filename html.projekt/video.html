@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="slike/styles.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Jedan stupac za video, drugi za tekst */
+            gap: 20px; /* Razmak između stupaca */
+        }
+
+        .grid-item {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: rgba(230, 204, 255, 0.5); /* Dodajemo pastelnu ljubičastu pozadinu */
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Uklanja razmak ispod videa */
+        }
+
+        .text-box {
+            color: #ffffff; /* Bijela boja teksta */
+        }
+
+        h2 {
+            font-size: 2.5em; /* Povećavamo veličinu naslova */
+            color: #ffffff; /* Bijela boja naslova */
+            margin-bottom: 20px; /* Dodajemo malo razmaka ispod naslova */
+            text-align: center; /* Centriramo naslov */
+            text-transform: uppercase; /* Pretvaramo naslov u velika slova */
+            font-family: 'Arial', sans-serif; /* Koristimo ljepši font */
+        }
+    </style>
+</head>
+<body>
+    <h2>Video</h2>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <video controls>
+                <source src="slike/video.mp4" type="video/mp4">
+                Vaš preglednik ne podržava HTML video.
+            </video>
+        </div>
+        <div class="grid-item">
+            <div class="text-box">
+                <p>Video je reklama za Nescafe 3u1 srong. Prvi dio je cinemagraf, a nadalje imamo različite kadrove koji nam pokazuju koliko je ovaj proizvod praktičan. Greška koju sam napravila je ne korištenje stativa pri snimanju cinemagrafa što se očito vidi u predloženom.</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o_meni.html">O meni</a></li>
+            <li><a href="vjezbe.html">Vježbe</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

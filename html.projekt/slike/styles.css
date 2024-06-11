@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'MirjamOrsolic';
+    src: url('fonts/MirjamOrsolic.woff2') format('woff2'),
+         url('fonts/MirjamOrsolic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+h1 {
+    font-family: 'MirjamOrsolic', Arial, sans-serif;
+}
+h1 {
+    font-size: 3em;
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-box {
+    background-color: rgba(255, 182, 193, 0.5); /* pastel pink background */
+    border: 2px solid rgba(255, 182, 193, 0.8); /* pastel pink border */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em; /* povećanje fonta */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    border: 2px solid rgba(255, 182, 193, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    height: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.image-container img {
+    border: 2px solid rgba(255, 182, 193, 0.8); 
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 200px;
+    height: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+
+.image-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
